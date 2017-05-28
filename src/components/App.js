@@ -1,9 +1,18 @@
-import React, {PropTypes} from 'react';
+import React, {Component} from 'react';
+import NavigationDrawer from 'react-md/lib/NavigationDrawers';
+import '../styles/App.scss';
+class App extends Component {
 
-class App extends React.Component {
   render() {
     return (
-      <div />
+      <NavigationDrawer
+        drawerTitle="SimpleApp"
+        toolbarTitle="Welcome to SimpleApp"
+        drawerType={NavigationDrawer.DrawerTypes.TEMPORARY_MINI}
+        navItems={[]}
+      >
+        <h1 className="md-text-container md-text-center">Hello World!</h1>
+      </NavigationDrawer>
     );
   }
 }
