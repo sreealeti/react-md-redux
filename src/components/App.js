@@ -8,7 +8,7 @@ class App extends Component {
       <NavigationDrawer
         drawerTitle="SimpleApp"
         toolbarTitle="Welcome to SimpleApp"
-        drawerType={NavigationDrawer.DrawerTypes.TEMPORARY_MINI}
+        drawerType={NavigationDrawer.DrawerTypes.PERSISTENT_MINI}
         navItems={[]}
       >
         <h1 className="md-text-container md-text-center">Hello World!</h1>
